@@ -1,0 +1,40 @@
+# ============================================================
+# Sensalis Standard .gitignore fuer R / Quarto / RStudio
+# ============================================================
+# Zweck: nur Quelldateien versionieren (.qmd, .R, .bib, Daten),
+# NICHT die generierten Ausgaben und Caches.
+
+# --- R / RStudio ---
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# --- Quarto generierte Ausgaben ---
+/.quarto/
+_book/
+_site/
+/_freeze/
+*_files/
+*_cache/
+
+# --- generierte Dokumente (Quelle bleibt .qmd) ---
+# Hinweis: auskommentiert lassen, falls du gerenderte PDFs/HTML doch tracken willst.
+# *.html
+# *.pdf
+# *.docx
+
+# --- Betriebssystem / Editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.tmp
+*.log
+
+# --- Secrets (NIE versionieren!) ---
+.env
+.Renviron
+*.key
+*.pem
